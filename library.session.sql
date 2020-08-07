@@ -30,3 +30,17 @@ INSERT INTO libraryapp_library
 (title, address)
 VALUES
 ('Mt. Juliet - Wilson County Library', '2765 N Mt Juliet Rd, Mt. Juliet, TN 37122');
+
+SELECT
+    l.id,
+    l.title,
+    l.address,
+    b.id book_id,
+    b.title book_title,
+    b.author,
+    b.year_published,
+    b.isbn
+                
+FROM libraryapp_library l
+JOIN libraryapp_book b ON l.id = b.location_id
+

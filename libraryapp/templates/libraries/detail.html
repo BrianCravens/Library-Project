@@ -1,6 +1,7 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
+{% extends 'shared/base.html' %}
+
+{% block content %}
+
   <head>
     <meta charset="utf-8">
     <title>Library</title>
@@ -14,6 +15,4 @@
     <input type="hidden" name="actual_method" value="DELETE">
     <button>Delete</button>
     </form>
-
-  </body>
-</html>
+{% endblock %}
